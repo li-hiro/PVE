@@ -1,0 +1,33 @@
+# 依赖与构建产物
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# 运行时数据（SQLite / WAL / 上传文件）
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# 本地环境与密钥
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

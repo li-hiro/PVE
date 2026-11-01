@@ -1,0 +1,23 @@
+{
+  "name": "virtgate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VirtGate · PVE 自助管理与审计门户（开源单体双进程部署）",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "setup": "npm ci --prefix server && npm ci --prefix web",
+    "dev:server": "npm run dev --prefix server",
+    "dev:web": "npm run dev --prefix web",
+    "build": "npm run build --prefix server && npm run build --prefix web",
+    "start": "npm run start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix web",
+    "test:server": "npm run test --prefix server",
+    "test:web": "npm run test --prefix web",
+    "typecheck": "npm run typecheck --prefix server && npm run typecheck --prefix web",
+    "license:check": "node scripts/license-check.mjs",
+    "deploy": "bash scripts/deploy.sh"
+  }
+}
